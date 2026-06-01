@@ -17,7 +17,9 @@ elif [[ "$1" == "--init" ]]; then
     export PATH="$PATH:$(pwd)/repo_clone"
 elif [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
     echo "Dostepne opcje:"
-    echo "--date    Wyswietla dzisiejsza date"
-    echo "--logs [x]   tworzy x plikow log"
-    echo "--help      Wyswietla liste z pomoca"
+    echo "--date, -d    Wyswietla dzisiejsza date"
+    echo "--logs, -l [x]   tworzy x plikow log"
+    echo "--error, -e [x]  tworzy x folderow z plikami error"
+    echo "--init        Klonuje repozytorium do obecnego katalogu"
+    echo "--help, -h      Wyswietla liste z pomoca"
 fi
